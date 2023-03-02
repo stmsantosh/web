@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ariana Parks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-outer">
+        <!-- Header start -->
+
+        <nav class="navbar navbar-expand-lg bg-light position-absolute top-0 w-100 header-outer py-md-3 py-xl-4 py-2 ">
+            <div class="container">
+                <a class="navbar-brand logo-link" href="index.html"><img src="images/ArianaParksLogo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end menu-list-outer" id="navbarSupportedContent">
+
+                    <a href="#" class="d-lg-none mobile-logo mt-4 mb-5"><svg width="284" height="31"
+							viewBox="0 0 284 31" fill="#333333" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M6.60511 30H0.980114L11.2216 0.90909H17.7273L27.983 30H22.358L14.5881 6.875H14.3608L6.60511 30ZM6.78977 18.5938H22.1307V22.8267H6.78977V18.5938ZM31.8146 30V0.90909H42.7237C44.9586 0.90909 46.8336 1.29735 48.3487 2.07386C49.8733 2.85038 51.0239 3.93939 51.8004 5.34091C52.5864 6.73295 52.9794 8.35701 52.9794 10.2131C52.9794 12.0786 52.5817 13.6979 51.7862 15.071C51.0002 16.4347 49.8402 17.4905 48.3061 18.2386C46.772 18.9773 44.8875 19.3466 42.6527 19.3466H34.8828V14.9716H41.9425C43.2493 14.9716 44.3194 14.7917 45.1527 14.4318C45.986 14.0625 46.6016 13.5275 46.9993 12.8267C47.4065 12.1165 47.6101 11.2453 47.6101 10.2131C47.6101 9.18087 47.4065 8.30019 46.9993 7.57102C46.5921 6.83239 45.9718 6.27367 45.1385 5.89489C44.3052 5.50663 43.2304 5.3125 41.9141 5.3125H37.0845V30H31.8146ZM46.843 16.8182L54.0447 30H48.1641L41.0902 16.8182H46.843ZM63.1001 0.90909V30H57.8303V0.90909H63.1001ZM72.5426 30H66.9176L77.1591 0.90909H83.6648L93.9205 30H88.2955L80.5256 6.875H80.2983L72.5426 30ZM72.7273 18.5938H88.0682V22.8267H72.7273V18.5938ZM121.658 0.90909V30H116.971L103.263 10.1847H103.022V30H97.7521V0.90909H102.468L116.161 20.7386H116.417V0.90909H121.658ZM131.136 30H125.511L135.753 0.90909H142.259L152.514 30H146.889L139.119 6.875H138.892L131.136 30ZM131.321 18.5938H146.662V22.8267H131.321V18.5938ZM165.934 30V0.90909H175.323C177.388 0.90909 179.111 1.30682 180.494 2.10227C181.886 2.88826 182.932 3.95833 183.633 5.3125C184.343 6.66667 184.698 8.19129 184.698 9.88636C184.698 11.5814 184.348 13.1108 183.647 14.4744C182.946 15.8286 181.905 16.9034 180.522 17.6989C179.139 18.4848 177.421 18.8778 175.366 18.8778H167.979V16.4915H175.295C176.819 16.4915 178.084 16.2074 179.087 15.6392C180.091 15.0616 180.839 14.2756 181.332 13.2812C181.834 12.2869 182.085 11.1553 182.085 9.88636C182.085 8.61742 181.834 7.4858 181.332 6.49148C180.839 5.49716 180.086 4.71591 179.073 4.14773C178.069 3.57954 176.796 3.29545 175.252 3.29545H168.59V30H165.934ZM188.008 30H185.224L195.806 0.90909H198.647L209.229 30H206.445L197.326 4.3608H197.127L188.008 30ZM190.011 18.8494H204.442V21.2358H190.011V18.8494ZM214.215 30V0.90909H223.604C225.669 0.90909 227.392 1.28314 228.775 2.03125C230.167 2.76989 231.213 3.79735 231.914 5.11364C232.624 6.42045 232.979 7.9214 232.979 9.61648C232.979 11.3116 232.624 12.8078 231.914 14.1051C231.213 15.4025 230.172 16.4157 228.789 17.1449C227.406 17.8741 225.692 18.2386 223.647 18.2386H215.65V15.8097H223.576C225.091 15.8097 226.351 15.5587 227.354 15.0568C228.368 14.5549 229.121 13.84 229.613 12.9119C230.115 11.9839 230.366 10.8854 230.366 9.61648C230.366 8.34754 230.115 7.23958 229.613 6.29261C229.111 5.33617 228.353 4.59754 227.34 4.0767C226.336 3.55587 225.067 3.29545 223.533 3.29545H216.871V30H214.215ZM227.042 16.875L234.201 30H231.133L224.045 16.875H227.042ZM239.45 30V0.90909H242.106V16.5767H242.362L256.566 0.90909H260.06L247.631 14.3608L260.004 30H256.765L245.984 16.2074L242.106 20.554V30H239.45ZM280.87 8.18182C280.709 6.5625 279.994 5.27462 278.725 4.31818C277.456 3.36174 275.861 2.88352 273.938 2.88352C272.584 2.88352 271.391 3.11553 270.359 3.57955C269.336 4.04356 268.531 4.6875 267.944 5.51136C267.366 6.32576 267.077 7.25379 267.077 8.29545C267.077 9.0625 267.243 9.73485 267.575 10.3125C267.906 10.8902 268.351 11.3873 268.91 11.804C269.478 12.2112 270.103 12.5616 270.785 12.8551C271.476 13.1487 272.172 13.3949 272.873 13.5938L275.941 14.4744C276.869 14.7301 277.797 15.0568 278.725 15.4545C279.653 15.8523 280.501 16.3542 281.268 16.9602C282.044 17.5568 282.665 18.2907 283.129 19.1619C283.602 20.0237 283.839 21.0606 283.839 22.2727C283.839 23.8258 283.436 25.2225 282.631 26.4631C281.826 27.7036 280.671 28.6884 279.165 29.4176C277.66 30.1373 275.856 30.4972 273.754 30.4972C271.774 30.4972 270.056 30.1705 268.597 29.517C267.139 28.8542 265.993 27.9403 265.16 26.7756C264.326 25.6108 263.858 24.2614 263.754 22.7273H266.481C266.576 23.8731 266.954 24.8437 267.617 25.6392C268.28 26.4347 269.142 27.0407 270.202 27.4574C271.263 27.8646 272.447 28.0682 273.754 28.0682C275.202 28.0682 276.49 27.8267 277.617 27.3438C278.754 26.8513 279.644 26.1695 280.288 25.2983C280.941 24.4176 281.268 23.3949 281.268 22.2301C281.268 21.2453 281.012 20.4214 280.501 19.7585C279.989 19.0862 279.274 18.5227 278.356 18.0682C277.447 17.6136 276.391 17.2112 275.188 16.8608L271.708 15.8381C269.426 15.1562 267.655 14.214 266.396 13.0114C265.136 11.8087 264.506 10.2746 264.506 8.40909C264.506 6.84659 264.923 5.47348 265.756 4.28977C266.599 3.09659 267.736 2.16856 269.165 1.50568C270.605 0.833332 272.219 0.497158 274.009 0.497158C275.818 0.497158 277.418 0.828598 278.81 1.49148C280.202 2.15436 281.306 3.06818 282.12 4.23295C282.944 5.38826 283.384 6.70454 283.441 8.18182H280.87Z"
+								fill="#333333" />
+						</svg></a>
+                    <ul class="navbar-nav menu-list ps-lg-0 ps-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium  text-capitalize" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium  text-capitalize" aria-current="page" href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium active text-capitalize" aria-current="page" href="mediapage.html">media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-capitalize" href="contactus.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-lg-none d-flex header-menu justify-content-center w-100">
+                        <a href="https://www.facebook.com/" class="d-flex justify-content-center align-items-center mx-lg-3 mx-2 sociallink"><svg
+								width="13" height="24" viewBox="0 0 13 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.0781 13.5L12.7344 9.1875H8.5625V6.375C8.5625 5.15625 9.125 4.03125 11 4.03125H12.9219V0.328125C12.9219 0.328125 11.1875 0 9.54688 0C6.125 0 3.875 2.10938 3.875 5.85938V9.1875H0.03125V13.5H3.875V24H8.5625V13.5H12.0781Z"
+									fill="white" />
+							</svg></a>
+
+                        <a href="https://www.instagram.com/" class="d-flex justify-content-center align-items-center mx-lg-3 mx-2 sociallink"><svg
+								width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.5 5.60938C8.5 5.60938 6.10938 8.04688 6.10938 11C6.10938 14 8.5 16.3906 11.5 16.3906C14.4531 16.3906 16.8906 14 16.8906 11C16.8906 8.04688 14.4531 5.60938 11.5 5.60938ZM11.5 14.5156C9.57812 14.5156 7.98438 12.9688 7.98438 11C7.98438 9.07812 9.53125 7.53125 11.5 7.53125C13.4219 7.53125 14.9688 9.07812 14.9688 11C14.9688 12.9688 13.4219 14.5156 11.5 14.5156ZM18.3438 5.42188C18.3438 6.125 17.7812 6.6875 17.0781 6.6875C16.375 6.6875 15.8125 6.125 15.8125 5.42188C15.8125 4.71875 16.375 4.15625 17.0781 4.15625C17.7812 4.15625 18.3438 4.71875 18.3438 5.42188ZM21.9062 6.6875C21.8125 5 21.4375 3.5 20.2188 2.28125C19 1.0625 17.5 0.6875 15.8125 0.59375C14.0781 0.5 8.875 0.5 7.14062 0.59375C5.45312 0.6875 4 1.0625 2.73438 2.28125C1.51562 3.5 1.14062 5 1.04688 6.6875C0.953125 8.42188 0.953125 13.625 1.04688 15.3594C1.14062 17.0469 1.51562 18.5 2.73438 19.7656C4 20.9844 5.45312 21.3594 7.14062 21.4531C8.875 21.5469 14.0781 21.5469 15.8125 21.4531C17.5 21.3594 19 20.9844 20.2188 19.7656C21.4375 18.5 21.8125 17.0469 21.9062 15.3594C22 13.625 22 8.42188 21.9062 6.6875ZM19.6562 17.1875C19.3281 18.125 18.5781 18.8281 17.6875 19.2031C16.2812 19.7656 13 19.625 11.5 19.625C9.95312 19.625 6.67188 19.7656 5.3125 19.2031C4.375 18.8281 3.67188 18.125 3.29688 17.1875C2.73438 15.8281 2.875 12.5469 2.875 11C2.875 9.5 2.73438 6.21875 3.29688 4.8125C3.67188 3.92188 4.375 3.21875 5.3125 2.84375C6.67188 2.28125 9.95312 2.42188 11.5 2.42188C13 2.42188 16.2812 2.28125 17.6875 2.84375C18.5781 3.17188 19.2812 3.92188 19.6562 4.8125C20.2188 6.21875 20.0781 9.5 20.0781 11C20.0781 12.5469 20.2188 15.8281 19.6562 17.1875Z"
+									fill="white" />
+							</svg></a>
+
+                        <a href="https://in.pinterest.com/" class="d-flex justify-content-center align-items-center mx-lg-3 mx-2 sociallink"><svg
+								width="18" height="24" viewBox="0 0 18 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.5625 0.328125C4.73438 0.328125 0 3.51562 0 8.71875C0 12 1.82812 13.875 2.95312 13.875C3.42188 13.875 3.70312 12.6094 3.70312 12.2344C3.70312 11.8125 2.57812 10.875 2.57812 9.04688C2.57812 5.29688 5.4375 2.625 9.14062 2.625C12.375 2.625 14.7188 4.45312 14.7188 7.78125C14.7188 10.2656 13.7344 14.9062 10.5 14.9062C9.32812 14.9062 8.29688 14.0625 8.29688 12.8906C8.29688 11.1094 9.5625 9.375 9.5625 7.54688C9.5625 4.45312 5.15625 5.01562 5.15625 8.76562C5.15625 9.5625 5.25 10.4062 5.625 11.1562C4.96875 13.9219 3.65625 18.0938 3.65625 20.9531C3.65625 21.8438 3.75 22.6875 3.84375 23.5781C3.98438 23.7656 3.9375 23.7656 4.17188 23.6719C6.51562 20.4375 6.46875 19.7812 7.5 15.5625C8.10938 16.6406 9.5625 17.25 10.7812 17.25C15.75 17.25 18 12.375 18 8.01562C18 3.375 13.9688 0.328125 9.5625 0.328125Z"
+									fill="white" />
+							</svg></a>
+                    </div>
+                    <div class="bs-layered"></div>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Banner start -->
+
+        <section class="innerpage-banner position-relative">
+
+            <img src="images/innerpagebanner.jpg" class="w-100" alt="">
+
+            <h2 class="page-title text-center white-text-color position-absolute translate-middle-x fs-1">Our Media</h2>
+
+        </section>
+
+
+        <!-- about us content start  -->
+
+        <section class="ourmedia-section py-xl-6 py-5 bg-light">
+            <div class="container">
+
+                <div class="row justify-content-center more-video">
+                    <div class="col-md-6  mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn "><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- After click shows -->
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 show-more-video">
+                        <div class="media-content position-relative attach-after" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <a href="#">
+                                <img src="images/mediaimage1.png" class="img-thumbnail border-0 p-0 w-100" alt="mediaimage1.png">
+                            </a>
+                            <a href="#" class="pos-absolute position-absolute top-50 translate-middle videobtn"><img src="images/videobtn.svg" alt=""></a>
+                            <!-- Modal -->
+                            <div class="modal fade media-viedo-popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+
+                                        <button type="button" class="btn-close crossButton" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bv_FH2Hk9o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- After click shows -->
+                </div>
+
+                <div class="mt-lg-4 mt-3 text-center">
+                    <button class="btn btn-primary btn-lg text-uppercase rounded fw-semibold" id="show-more">load more Media
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section start -->
+
+
+
+
+        <!-- Footer section start -->
+
+
+        <footer class="main-footer position-relative pt-5 attach-after">
+            <div class="container">
+                <div class="row pb-4 align-items-center">
+                    <div class="col-md-8 text-md-start text-center">
+                        <h2 class="white-text-color fw-semibold fs-1 text-capitalize">Get in Touch</h2>
+                        <p class="white-text-color text-truncate">Want to get in touch? We'd love to hear from you. Here's how you can reach us</p>
+                    </div>
+                    <div class="col-md-4 text-md-end text-center ">
+                        <a href="contactus.html" class="btn btn-primary btn-lg text-uppercase rounded fw-semibold">Get
+							in Touch</a>
+                    </div>
+
+                </div>
+
+                <div class="w-100 divider"></div>
+
+                <div class="row py-lg-5 py-4">
+
+                    <div class="col d-flex justify-content-center align-items-center">
+
+
+                        <a href="https://www.facebook.com/" class="d-flex justify-content-center align-items-center mx-3 sociallink"><svg width="13"
+								height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.0781 13.5L12.7344 9.1875H8.5625V6.375C8.5625 5.15625 9.125 4.03125 11 4.03125H12.9219V0.328125C12.9219 0.328125 11.1875 0 9.54688 0C6.125 0 3.875 2.10938 3.875 5.85938V9.1875H0.03125V13.5H3.875V24H8.5625V13.5H12.0781Z"
+									fill="white" />
+							</svg></a>
+
+                        <a href="https://www.instagram.com/" class="d-flex justify-content-center align-items-center mx-3 sociallink"><svg width="22"
+								height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.5 5.60938C8.5 5.60938 6.10938 8.04688 6.10938 11C6.10938 14 8.5 16.3906 11.5 16.3906C14.4531 16.3906 16.8906 14 16.8906 11C16.8906 8.04688 14.4531 5.60938 11.5 5.60938ZM11.5 14.5156C9.57812 14.5156 7.98438 12.9688 7.98438 11C7.98438 9.07812 9.53125 7.53125 11.5 7.53125C13.4219 7.53125 14.9688 9.07812 14.9688 11C14.9688 12.9688 13.4219 14.5156 11.5 14.5156ZM18.3438 5.42188C18.3438 6.125 17.7812 6.6875 17.0781 6.6875C16.375 6.6875 15.8125 6.125 15.8125 5.42188C15.8125 4.71875 16.375 4.15625 17.0781 4.15625C17.7812 4.15625 18.3438 4.71875 18.3438 5.42188ZM21.9062 6.6875C21.8125 5 21.4375 3.5 20.2188 2.28125C19 1.0625 17.5 0.6875 15.8125 0.59375C14.0781 0.5 8.875 0.5 7.14062 0.59375C5.45312 0.6875 4 1.0625 2.73438 2.28125C1.51562 3.5 1.14062 5 1.04688 6.6875C0.953125 8.42188 0.953125 13.625 1.04688 15.3594C1.14062 17.0469 1.51562 18.5 2.73438 19.7656C4 20.9844 5.45312 21.3594 7.14062 21.4531C8.875 21.5469 14.0781 21.5469 15.8125 21.4531C17.5 21.3594 19 20.9844 20.2188 19.7656C21.4375 18.5 21.8125 17.0469 21.9062 15.3594C22 13.625 22 8.42188 21.9062 6.6875ZM19.6562 17.1875C19.3281 18.125 18.5781 18.8281 17.6875 19.2031C16.2812 19.7656 13 19.625 11.5 19.625C9.95312 19.625 6.67188 19.7656 5.3125 19.2031C4.375 18.8281 3.67188 18.125 3.29688 17.1875C2.73438 15.8281 2.875 12.5469 2.875 11C2.875 9.5 2.73438 6.21875 3.29688 4.8125C3.67188 3.92188 4.375 3.21875 5.3125 2.84375C6.67188 2.28125 9.95312 2.42188 11.5 2.42188C13 2.42188 16.2812 2.28125 17.6875 2.84375C18.5781 3.17188 19.2812 3.92188 19.6562 4.8125C20.2188 6.21875 20.0781 9.5 20.0781 11C20.0781 12.5469 20.2188 15.8281 19.6562 17.1875Z"
+									fill="white" />
+							</svg></a>
+
+
+
+                        <a href="https://in.pinterest.com/" class="d-flex justify-content-center align-items-center mx-3 sociallink"><svg width="18"
+								height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.5625 0.328125C4.73438 0.328125 0 3.51562 0 8.71875C0 12 1.82812 13.875 2.95312 13.875C3.42188 13.875 3.70312 12.6094 3.70312 12.2344C3.70312 11.8125 2.57812 10.875 2.57812 9.04688C2.57812 5.29688 5.4375 2.625 9.14062 2.625C12.375 2.625 14.7188 4.45312 14.7188 7.78125C14.7188 10.2656 13.7344 14.9062 10.5 14.9062C9.32812 14.9062 8.29688 14.0625 8.29688 12.8906C8.29688 11.1094 9.5625 9.375 9.5625 7.54688C9.5625 4.45312 5.15625 5.01562 5.15625 8.76562C5.15625 9.5625 5.25 10.4062 5.625 11.1562C4.96875 13.9219 3.65625 18.0938 3.65625 20.9531C3.65625 21.8438 3.75 22.6875 3.84375 23.5781C3.98438 23.7656 3.9375 23.7656 4.17188 23.6719C6.51562 20.4375 6.46875 19.7812 7.5 15.5625C8.10938 16.6406 9.5625 17.25 10.7812 17.25C15.75 17.25 18 12.375 18 8.01562C18 3.375 13.9688 0.328125 9.5625 0.328125Z"
+									fill="white" />
+							</svg></a>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="d-flex justify-content-center footer-links pb-3 pb-lg-5	">
+                    <a href="index.html" class="mx-lg-4 mx-2 text-decoration-none white-text-color">Home</a>
+                    <a href="aboutus.html" class="mx-lg-4 mx-2 text-decoration-none white-text-color">About</a>
+                    <a href="mediapage.html" class="mx-lg-4 mx-2 text-decoration-none white-text-color">Media</a>
+                    <a href="contactus.html" class="mx-lg-4 mx-2 text-decoration-none white-text-color">Contact</a>
+                </div>
+
+
+            </div>
+
+            <div class="copyright-content text-center  py-3">
+                <p class="m-0 white-text-color py-1">©2023 Ariana Parks. All Right Reserved</p>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+
+</html>

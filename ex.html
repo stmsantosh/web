@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+    <button id="show-more">Show More</button>
+    <script>
+        const showMoreBtn = document.getElementById("show-more");
+        const content = document.querySelector(".content");
+        const items = content.querySelectorAll(".item");
+        const itemsPerLoad = 3;
+        let currentItemCount = 0;
+        let hasClickedBefore = false;
+
+        showMoreBtn.addEventListener("click", () => {
+            if (!hasClickedBefore) {
+                // Hide all items except for the first 3
+                for (let i = itemsPerLoad; i < items.length; i++) {
+                    items[i].classList.add("hidden");
+                }
+                hasClickedBefore = true;
+            }
+
+            for (let i = currentItemCount; i < currentItemCount + itemsPerLoad; i++) {
+                if (items[i]) {
+                    items[i].classList.remove("hidden");
+                } else {
+                    showMoreBtn.disabled = true;
+                    break;
+                }
+            }
+            currentItemCount += itemsPerLoad;
+        });
+    </script>
+</body>
+
+</html>
